@@ -35,6 +35,9 @@
             this.VisualChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.BtnMessagePersonRate = new System.Windows.Forms.Button();
             this.BtnMessagePerHour = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.LblFirstMessage = new System.Windows.Forms.Label();
+            this.btnMessagePerDay = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.VisualChart)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,12 +68,12 @@
             this.VisualChart.Legends.Add(legend1);
             this.VisualChart.Location = new System.Drawing.Point(147, 25);
             this.VisualChart.Name = "VisualChart";
-            this.VisualChart.Size = new System.Drawing.Size(807, 276);
+            this.VisualChart.Size = new System.Drawing.Size(934, 382);
             this.VisualChart.TabIndex = 2;
             // 
             // BtnMessagePersonRate
             // 
-            this.BtnMessagePersonRate.Location = new System.Drawing.Point(147, 307);
+            this.BtnMessagePersonRate.Location = new System.Drawing.Point(145, 414);
             this.BtnMessagePersonRate.Name = "BtnMessagePersonRate";
             this.BtnMessagePersonRate.Size = new System.Drawing.Size(114, 23);
             this.BtnMessagePersonRate.TabIndex = 3;
@@ -80,7 +83,7 @@
             // 
             // BtnMessagePerHour
             // 
-            this.BtnMessagePerHour.Location = new System.Drawing.Point(286, 306);
+            this.BtnMessagePerHour.Location = new System.Drawing.Point(284, 413);
             this.BtnMessagePerHour.Name = "BtnMessagePerHour";
             this.BtnMessagePerHour.Size = new System.Drawing.Size(100, 23);
             this.BtnMessagePerHour.TabIndex = 4;
@@ -88,11 +91,41 @@
             this.BtnMessagePerHour.UseVisualStyleBackColor = true;
             this.BtnMessagePerHour.Click += new System.EventHandler(this.BtnMessagePerHour_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(29, 55);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "First message:";
+            // 
+            // LblFirstMessage
+            // 
+            this.LblFirstMessage.AutoSize = true;
+            this.LblFirstMessage.Location = new System.Drawing.Point(32, 72);
+            this.LblFirstMessage.Name = "LblFirstMessage";
+            this.LblFirstMessage.Size = new System.Drawing.Size(0, 13);
+            this.LblFirstMessage.TabIndex = 6;
+            // 
+            // btnMessagePerDay
+            // 
+            this.btnMessagePerDay.Location = new System.Drawing.Point(403, 413);
+            this.btnMessagePerDay.Name = "btnMessagePerDay";
+            this.btnMessagePerDay.Size = new System.Drawing.Size(100, 23);
+            this.btnMessagePerDay.TabIndex = 7;
+            this.btnMessagePerDay.Text = "Message per day";
+            this.btnMessagePerDay.UseVisualStyleBackColor = true;
+            this.btnMessagePerDay.Click += new System.EventHandler(this.btnMessagePerDay_Click);
+            // 
             // SelectFileToAnalyse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1093, 448);
+            this.Controls.Add(this.btnMessagePerDay);
+            this.Controls.Add(this.LblFirstMessage);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnMessagePerHour);
             this.Controls.Add(this.BtnMessagePersonRate);
             this.Controls.Add(this.VisualChart);
@@ -113,6 +146,9 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart VisualChart;
         private System.Windows.Forms.Button BtnMessagePersonRate;
         private System.Windows.Forms.Button BtnMessagePerHour;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LblFirstMessage;
+        private System.Windows.Forms.Button btnMessagePerDay;
     }
 }
 

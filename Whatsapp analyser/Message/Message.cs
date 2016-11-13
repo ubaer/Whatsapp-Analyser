@@ -1,4 +1,4 @@
-﻿namespace Whatsapp_analyser
+﻿namespace Whatsapp_analyser.Message
 {
     public class Message
     {
@@ -23,8 +23,14 @@
             _content = content;
         }
 
+        public Message()
+        {
+            
+        }
+
         public int Index => _index;
-        public string Content => _content
+
+        public string Content => _content;
         public MessageDateTime DateTime => _dateTime;
     }
 }
